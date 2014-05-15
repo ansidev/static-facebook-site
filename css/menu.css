@@ -1,0 +1,81 @@
+.menu,
+.menu ul,
+.menu li,
+.menu a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+.menu {
+    height: 42px;
+    width: 300px;
+}
+.menu li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    height: 28px;
+    line-height: 22px;
+    padding: 7px 0;
+}
+.menu ul {
+    display: none;
+}
+.menu li a {
+    color: #fff;
+    display: block;
+    padding: 6px;
+    line-height: 16px;
+    height: auto;
+    text-decoration: none;
+    border-right: 1px solid #39538b;
+    font-family: Arial, Open Sans, Droid Sans, Segoe UI, Tahoma, Verdana, sans-serif;
+    font-size: 12px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.menu li a.lwi:hover,
+.menu li a:hover {
+    background: #39538b;
+    border-radius: 3px;
+}
+.menu li:first-child a { border-left: none; }
+.menu li:last-child a{ border-right: none; }
+
+.menu img.lwi {
+    float: left;
+    width: 20px;
+    height: 20px;
+    padding-top: 4px;
+    padding-right: 5px;
+    padding-bottom: 4px;
+}
+
+.menu span.lwi {
+    float: left;
+    height: auto;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+span.device_type_1 {
+    color: #63a924;
+}
+
+span.device_type_1,
+span.device_type_2 {
+    font-size: 11px;
+}
+
+span.device_type_2 {
+    color: #898f9c;
+}
+
+.menu a.lwi {
+    height: 28px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}

@@ -1,0 +1,154 @@
+.nav ul {
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    list-style-type: none;
+    font: bold 12px Verdana;
+}
+
+.nav li {
+    position: relative;
+    float: none;
+}
+
+.nav li a {
+    display: block;
+    overflow: auto;
+    color: #000;
+    text-decoration: none;
+    padding: 0;
+}
+
+.nav li a:hover {
+    border-radius: 3px;
+    background: #dddee0;
+}
+
+.nav ul li a:link,.nav ul li a:visited,.nav ul li a:active {
+    background: #1c5a80;
+    color: #fff;
+}
+
+.nav ul li a.selected {
+    background: #add8e6!important;
+    color: navy;
+}
+
+.nav ul li a:hover {
+    background: #add8e6;
+    color: navy;
+}
+
+.nav ul li ul {
+    position: absolute;
+    width: 170px;
+    top: 0;
+    font-weight: 400;
+    visibility: hidden;
+}
+
+div .welcome,div .newsfeed,div .messages,div .events,div .findfriends,div .tree,div .shield,div .group,div .hat,div .glass,div .addgroup,div .addpage,div .like,div .flag,div .friend,div .family,div .game,div .joypad {
+    float: left;
+    border: none;
+    margin: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+div .welcome {
+    background: url(../img/sprite-icon-all.png) no-repeat;
+}
+
+div .newsfeed {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -16px;
+}
+
+div .messages {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -32px;
+}
+
+div .events {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -48px;
+}
+
+div .findfriends {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -272px;
+}
+
+div .tree {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -48px;
+}
+
+div .shield {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -48px;
+}
+
+div .group {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -48px;
+}
+
+div .hat {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -48px;
+}
+
+div .glass {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -48px;
+}
+
+div .addgroup {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -48px;
+}
+
+div .addpage {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -48px;
+}
+
+div .like {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -48px;
+}
+
+div .flag {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -48px;
+}
+
+div .friend {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -48px;
+}
+
+div .family {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -48px;
+}
+
+div .game {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -48px;
+}
+
+div .joypad {
+    background: url(../img/sprite-icon-all.png) no-repeat 0 -48px;
+}
+
+div .nav_link {
+    width: 170px;
+}
+
+div .link_text {
+    width: auto;
+    max-width: 115px;
+    height: 15px;
+    margin: 5px 0;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#main #leftBar .number {
+    float: right;
+    margin: 5px 5px 5px 0;
+    font-size: 14px;
+    width: 24px;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

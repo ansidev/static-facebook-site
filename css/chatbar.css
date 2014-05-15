@@ -1,0 +1,177 @@
+#chatBar {
+    float: right;
+    width: 213px;
+    height: auto;
+    position: fixed;
+    top: 42px;
+    bottom: 0;
+    right: 0;
+    border-left: 1px solid #bbb;
+}
+
+/* CSS for customize scrollbar */
+.online_list::-webkit-scrollbar,
+.ticker_stream::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.online_list::-webkit-scrollbar-button:start:decrement,
+.online_list::-webkit-scrollbar-button:start:decrement,
+.ticker_stream::-webkit-scrollbar-button:end:increment,
+.ticker_stream::-webkit-scrollbar-button:end:increment  {
+    display: none;
+}
+
+.online_list::-webkit-scrollbar-track-piece,
+.ticker_stream::-webkit-scrollbar-track-piece  {
+    background-color: #bebebe;
+    -webkit-border-radius: 6px;
+}
+
+.online_list::-webkit-scrollbar-thumb:vertical,
+.ticker_stream::-webkit-scrollbar-thumb:vertical {
+    -webkit-border-radius: 6px;
+    background: #666 no-repeat center;
+}
+/* End Customize scrollbar */
+.online_list,
+.ticker_stream {
+/*    border: 1px solid #000;*/
+    border-bottom: 1px solid #bbb;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.ticker_stream {
+    height: 150px;
+    overflow-y: scroll;    
+}
+
+.online_list {
+    height: calc(100% - 177px);
+/*    height: 20px;*/
+    border-bottom: none;
+    margin-bottom: 3px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+div.online_user_avatar,
+div.chatBar_user_avatar {
+    margin: 0 8px;
+    float: left;
+    width: 32px !important;
+    height: 32px !important;
+}
+
+.online_list li,
+.ticker_stream li {
+    float: left;
+    width: 100%;
+    padding: 3px 0;
+}
+
+.online_list li,
+.online_list li.title:hover {
+    border-top: 1px solid #e9eaed;
+    border-bottom: 1px solid #e9eaed;
+}
+
+.online_list li.title:hover {
+    background: #e9eaed;
+}
+
+.ticker_stream li {
+    border-bottom: 1px solid #bbb;
+}
+
+.online_list li:hover,
+.ticker_stream li:hover {
+    background: #e0e0e0;
+}
+
+.online_list li:hover {
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+}
+
+ticker_stream a {
+    margin: 1px 8px;
+}
+
+div.online_user_name,
+div.chatBar_ticker_stream {
+/*    margin: 8px auto;*/
+    float: left;
+}
+
+div.chatBar_ticker_stream {
+    line-height: 15px;
+    width: calc(100% - 48px);
+}
+
+div.online_user_name {
+    line-height: 16px;
+    padding: 8px 0;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.online_user_status {
+    float: right;
+    line-height: 16px;
+    padding: 8px 8px 8px 0px;
+/*    margin-right: 8px;*/
+    width: 45px;
+    height: 16px;
+    text-align: right;
+}
+
+img.device_type_2 {
+   background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y1/r/55opkOLMyaA.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: -100px -413px;
+    width: 7px;
+    height: 11px;
+}
+
+.chatSearch {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-top: 1px solid #bbb;
+    height: 26px;
+    width: 213px;
+    background-color: #e9eaed;
+}
+
+.chatSearchIcon {
+    background-image: url(../img/search-icon-sprite.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -110px;
+    height: 13px;
+    left: 7px;
+    pointer-events: none;
+    position: absolute;
+    top: 6px;
+    width: 13px;
+    margin-right: 7px;
+}
+
+input.chatSearchForm {
+    position: absolute;
+    left: 27px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+/*    width: 100%;*/
+    border: none;
+    height: 23px;
+    background: #e9eaed;
+}

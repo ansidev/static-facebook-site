@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Freight Sans Pro Book Regular';
+    src: url(../fonts/FreightSansProBookRegular.otf);
+}
+@font-face {
+    font-family: 'Freight Sans Pro Semibold';
+    src: url(../fonts/FreightSansProSemibold.otf);
+}
+body {
+    margin: -10px auto;
+    background: #eee;
+    font-family: Segoe UI, Open Sans, Tahoma, Verdana, Arial, sans-serif !important;
+    font-size: 11pt;
+}
+
+a:link {
+    color: #3b5998;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.input {
+    background: #3b5998;
+    color: #000;
+}
+.wrapper .header {
+    background-color: #3b5998;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: auto;
+    height: auto;
+    min-height: 82px;
+    min-width: 980px;
+}
+.wrapper {
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    padding: 0 0 0 0;
+    left: 0;
+    right: 0;
+}
+.margin {
+    margin: auto auto 10px auto;
+    min-width: 980px;
+    width: 980px;
+}
+.footer {
+    background: #fff;
+    clear: both;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    min-width: 980px;
+    left: 0;
+    right: 0;
+}
+.wrapper .header .left {
+    width: auto;
+    min-width: 170px;
+    float: left;
+    height: 82px;
+}
+.wrapper .header .right {
+    float: right;
+    width: 45%;
+    max-width: 430px;
+    height: 82px;
+    margin-right: auto;
+}
+.main .margin .right {
+    float: right;
+    width: auto;
+    max-width: 392px;
+/*    margin-right: 50px;*/
+    margin-bottom: 30px;
+}
+.logo {
+    margin-top: 30px;
+    width: 170px;
+    height: 36px;
+}
+form#login-form {
+    height: auto;
+    max-height: 379px;
+    margin: 0 auto auto 5px;
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #fff;
+}
+label {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #fff;
+    cursor: pointer;
+    height: 15px;
+}
+#btnLogin {
+    background: -webkit-linear-gradient(#5972a7, #637bad);
+    padding: 3px 10px 3px 10px;
+    border: 1px;
+    border-color: #1a356e;
+    color: #fff;
+}
+
+h1 {
+    font-size: 15pt;
+}
+.main .margin .left {
+    float: left;
+    width: 520px;
+    margin-right: 10px;
+}
+table#login-table {
+    float: right;
+    background: #3b5998;
+}
+.login-form-element {
+    float: left;
+    min-width: 150px;
+    min-height: 15px;
+    margin-left: 6px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.login-form-left {
+    float: left;
+    width: auto;
+    min-width: 150px;
+    /*    max-width: 315px;*/
+}
+.pbm {
+    padding-bottom: 10px;
+}
+.mtl {
+    margin-top: 20px;
+}
+.icon {
+    text-align: center;
+    width: 55px;
+    margin-right: 20px;
+}
+.vam {
+    vertical-align: middle;
+}
+.dib {
+    display: inline-block;
+}
+.desc {
+    width: 440px;
+}
+.fsps {
+    font-family: 'Freight Sans Pro Semibold', Segoe UI, Open Sans, Arial;
+    font-weight: normal;
+    font-size: 18px;
+    color: #333;
+    margin-right: 10px;
+}
+.main {
+    clear: both;
+}
+.fspbr {
+    font-family: 'Freight Sans Pro Book Regular', Segoe UI, Open Sans, Arial, Segoe UI;
+    font-weight: normal;
+    font-size: 15px;
+    color: #333;
+    margin-right: 10px;
+}
+.lfloat {
+    float: left;
+}
+.mrm {
+    margin-right: 10px;
+}
+._inputtext {
+    font-family: Tahoma, "Freight Sans Pro Semibold", sans-serif;
+    font-size: 18px;
+    height: 20px;
+    width: 350px;
+    padding: 8px 10px 8px 10px;
+    margin: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #bdc7d8;
+}
+.halfw {
+    width: 157px;
+}
+select {
+    height: 30px;
+    border: 1px solid #bdc7d8;
+}
+
+.t1 {
+    font-family: Tahoma, Droid Sans, sans-serif;
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+._58ms {
+    display: inline-block;
+    margin-left: 10px;
+    font-family: Tahoma, sans-serif;
+    font-size: 11px;
+    vertical-align: middle;
+    max-width: 150px;
+}
+
+.gender {
+    margin-top: 10px;
+}
+
+._000 {
+    color: #000;
+}
+
+._58mv {
+    font-family: Tahoma, sans-serif;
+    font-size: 11px;
+    color: #777;
+    width: 316px;
+}
+
+.submit_button {
+    width: 152px;
+    font-family: "Freight Sans Pro Semibold";
+    height: auto;
+    font-size: 19px;
+    color: #fff;
+    padding: 7px 20px 7px 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;
+    -webkit-box-shadow: inset 0 1px 1px #a4e388;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+}
+
+
+
+.photo-icon {
+    background-image: url(../img/introduction-icon.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0px 0px;
+    height: 43px;
+    padding: 0;
+    position: relative;
+    width: 48px;
+}
+
+.share-icon {
+    background-image: url(../img/introduction-icon.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0px -43px;
+    height: 45px;
+    padding: 0;
+    position: relative;
+    width: 44px;
+}
+
+.connect-icon {
+    background-image: url(../img/introduction-icon.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0px -88px;
+    height: 51px;
+    padding: 0;
+    position: relative;
+    width: 55px;
+}

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Facebook</title>
+    <link rel="shortcut icon" href="./img/fb.ico" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./css/menu.css" type="text/css" />
+    <link rel="stylesheet" href="./css/nav.css" type="text/css" />
+    <link rel="stylesheet" href="./css/chatbar.css" type="text/css" />
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="topBar">
+                <div id="logo">
+                    <a href="https://facebook.com/" title="Facebook Home"></a>
+                </div>
+                <!--end #logo-->
+                <div id="searchBar">
+                    <form action="https://www.facebook.com/search/web/" method="get">
+                        <input type="text" name="q" placeholder="Search for people, places and things" aria-label="Search for people, places and things" class="font_set">
+                        <input type="submit" class="searchButton" value="">
+                    </form>
+                </div>
+                <!--end #searchBar-->
+                <div id="pageNav">
+                    <ul class="menu">
+                        <li>
+                            <a href="#profile" class="lwi">
+                                <img class="lwi" alt="" src="img/avatar-s.jpg">
+                                <span class="lwi">Minh Tri</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#newsfeed">Home</a>
+                        </li>
+                        <li>
+                            <a href="#findfriends">Find friends</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--end #topBar-->
+        </div>
+        <!--end #header-->
+        <div id="main">
+            <div id="leftBar">
+                <div id="user_box">
+                    <div id="user_avatar"></div>
+                    <div id="user_info">
+                        <a class="_user_info font_set" href="#profile">Le Minh Tri</a>
+                        <br>
+                        <a class="_user_info font_set" style="font-weight:normal;" href="#edit-profile">Edit Profile</a>
+                    </div>
+                </div>
+                <div id="user_nav" style="margin-top: 15px;">
+                    <ul class="nav">
+                        <li>
+                            <a href="#welcome">
+                                <div class="nav_link">
+                                    <div class="welcome"></div>
+                                    <div class="link_text">Welcome</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#newsfeed">
+                                <div class="nav_link">
+                                    <div class="newsfeed"></div>
+                                    <div class="link_text">News Feed</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#messages">
+                                <div class="nav_link">
+                                    <div class="messages"></div>
+                                    <div class="link_text">Messages</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#events">
+                                <div class="nav_link">
+                                    <div class="events"></div>
+                                    <div class="link_text">Events</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#findfriends">
+                                <div class="nav_link">
+                                    <div class="findfriends"></div>
+                                    <div class="link_text">Find Friends</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="title">
+                    <a class="title" href="#groups">Groups</a>
+                </div>
+                <div id="user_groups">
+                    <ul class="nav">
+                        <li>
+                            <a href="#uit">
+                                <div class="nav_link">
+                                    <div class="welcome"></div>
+                                    <div class="link_text">Dai hoc CNTT</div>
+                                    <div class="number">1</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#uit-nt">
+                                <div class="nav_link">
+                                    <div class="newsfeed"></div>
+                                    <div class="link_text">Mang may tinh va truyen thong</div>
+                                    <div class="number">10</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#ltudm">
+                                <div class="nav_link">
+                                    <div class="messages"></div>
+                                    <div class="link_text">Lap trinh ung dung mang</div>
+                                    <div class="number">10</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tbmvttdpt">
+                                <div class="nav_link">
+                                    <div class="events"></div>
+                                    <div class="link_text">Thiet bi mang va truyen thong da phuong tien</div>
+                                    <div class="number">6</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#xlthsttt">
+                                <div class="nav_link">
+                                    <div class="findfriends"></div>
+                                    <div class="link_text">Xu ly tin hieu so trong truyen thong</div>
+                                    <div class="number">4</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--
+                        <ul class="nav">
+                            <li>
+                                <a href="#" class="welcome">[&nbsp;[&nbsp;[&nbsp;[&nbsp;[&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]&nbsp;]&nbsp;]&nbsp;]&nbsp;]&nbsp;]</a>
+                            </li>
+                            <li>
+                                <a href="#" class="newsfeed">[&nbsp;:&nbsp;:&nbsp;[&nbsp;[&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]&nbsp;]&nbsp;]&nbsp;:&nbsp;:&nbsp;]</a>
+                            </li>
+                            <li>
+                                <a href="#" class="messages">[&nbsp;:&nbsp;:&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]&nbsp;:&nbsp;:&nbsp;]</a>
+                            </li>
+                            <li>
+                                <a href="#" class="events">[&nbsp;:&nbsp;:&nbsp;[&nbsp;[&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]&nbsp;]&nbsp;]&nbsp;:&nbsp;:&nbsp;]</a>
+                            </li>
+                            <li>
+                                <a href="#" class="findfriends">[&nbsp;[&nbsp;[&nbsp;[&nbsp;[&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]&nbsp;]&nbsp;]&nbsp;]&nbsp;]&nbsp;]</a>
+                            </li>
+                        </ul>
+-->
+                </div>
+                <div class="title">
+                    <a class="title" href="#apps">Apps</a>
+                </div>
+                <div id="user_apps">
+                    <ul class="nav">
+                        <li>
+                            <a href="#facebook">
+                                <div class="nav_link">
+                                    <div class="welcome"></div>
+                                    <div class="link_text">Facebook</div>
+                                    <div class="number">3</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#google">
+                                <div class="nav_link">
+                                    <div class="newsfeed"></div>
+                                    <div class="link_text">Google Search</div>
+                                    <div class="number">9+</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gmail">
+                                <div class="nav_link">
+                                    <div class="messages"></div>
+                                    <div class="link_text">Gmail</div>
+                                    <div class="number">21</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#chrome">
+                                <div class="nav_link">
+                                    <div class="events"></div>
+                                    <div class="link_text">Google Chrome</div>
+                                    <div class="number">40</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#firefox">
+                                <div class="nav_link">
+                                    <div class="findfriends"></div>
+                                    <div class="link_text">Firefox</div>
+                                    <div class="number">12</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="title">
+                    <a href="#friends" class="title">Friends</a>
+                </div>
+                <div id="user_friends">
+                    <ul class="nav">
+                        <li>
+                            <a href="#family">
+                                <div class="nav_link">
+                                    <div class="welcome"></div>
+                                    <div class="link_text">Family</div>
+                                    <div class="number">3</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#classmate">
+                                <div class="nav_link">
+                                    <div class="newsfeed"></div>
+                                    <div class="link_text">Classmate</div>
+                                    <div class="number">90</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gmail">
+                                <div class="nav_link">
+                                    <div class="messages"></div>
+                                    <div class="link_text">University of Information Technology</div>
+                                    <div class="number">21</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#chrome">
+                                <div class="nav_link">
+                                    <div class="events"></div>
+                                    <div class="link_text">Close friends</div>
+                                    <div class="number">40</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#firefox">
+                                <div class="nav_link">
+                                    <div class="findfriends"></div>
+                                    <div class="link_text">Old Friends</div>
+                                    <div class="number">78</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="title">
+                    <a href="#pages" class="title">Pages</a>
+                </div>
+                <div id="user_pages">
+                    <ul class="nav">
+                        <li>
+                            <a href="#family">
+                                <div class="nav_link">
+                                    <div class="welcome"></div>
+                                    <div class="link_text">Like page</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#classmate">
+                                <div class="nav_link">
+                                    <div class="newsfeed"></div>
+                                    <div class="link_text">Pages Feed</div>
+                                    <div class="number">10</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gmail">
+                                <div class="nav_link">
+                                    <div class="messages"></div>
+                                    <div class="link_text">Create a page...</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div id="ps" class="content_box">
+                    <div class="ps_header">
+                        <ul class="ps_menu">
+                            <li id="update_status">
+                                <a href="#">
+                                    <div class="ps_link">
+                                        <div class="update_status"></div>
+                                        <div class="ps_link_text">Update Status</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li style="line-height: 25px;color: #bbbbbb;">&nbsp;|&nbsp;</li>
+                            <li id="add_media">
+                                <a href="#">
+                                    <div class="ps_link">
+                                        <div class="add_media"></div>
+                                        <div class="ps_link_text">Add Photos/Video</div>
+                                    </div>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <textarea class="ps_form" placeholder="What's on your mind?"></textarea>
+                    <div class="content_box_footer">
+                        <div class="ps_rftr">
+                            <button id="post_status" type="submit">Post</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="status_box" class="content_box">
+                    <div class="content_box_wrapper">
+                        <div class="content_box_header">
+                            <div class="content_box_user_avatar">
+                                <img src="img/anonymous.gif" alt="">
+                            </div>
+                            <div class="content_box_status_info">
+                                <p>
+                                    <a class="content_box_username" href="#Anonymous">Anonymous</a> with <a href="#guest" target="_blank" class="content_box_other_link">Guest</a>
+                                </p>
+                                <p class="content_box_other_infos">
+                                    <a href="#" title="Wednesday, May 21, 2014 at 8:15am" target="_blank">3hrs</a>
+                                    &#183;
+                                    <a href="#" target="_blank">Ho Chi Minh City</a>
+                                    &#183;
+                                    <a href="#" class="tooltips">&nbsp;&nbsp;&nbsp;
+                                        <span>Share with: Anonymous's friends</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content_box_status">
+                            <p class="content_box_text">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            </p>
+                            <p class="content_box_status_ftr">
+                                <a href="#" title="Like this" target="_blank">Like</a>
+                                &#183;
+                                <a href="#" title="Leave a comment" target="_blank">Comment</a>
+                                &#183;
+                                <a href="#" title="Send this to friends or post it on your timeline." target="_blank">Share</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content_box_footer">
+                        <div class="content_box_footer_wrapper">
+                            <div class="content_like_box">
+                                <div class="like_box_image"><img class="like_box_image" src="" alt=""></div>
+                                <div class="liked_user">
+                                    <a class="content_box_other_link" href="#Guest" target="_blank">Guest</a> likes this.
+                                </div>
+                            </div>
+                            <div class="content_comment_box">
+                                <div class="comment_item">
+                                    <div class="comment_user_avatar">
+                                        <img src="./img/ad/uit.png" alt="" style="cursor: pointer;">
+                                    </div>
+                                    <div class="comment_info">
+                                        <div class="ad_title">
+                                            <p>
+                                                <a href="#PhongDinh" target="_blank" class="ad_site ad_font_set">Phong Dinh</a>
+                                            </p>
+                                            <p>
+                                                <a href="#" title="Wednesday, May 21, 2014 at 8:15am" target="_blank">3hrs</a>
+                                                &#183;
+                                                <a href="#" target="_blank">Ho Chi Minh City</a>
+                                                &#183;
+                                                <div class="like_box_image"></div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rightBar">
+                <div id="adBar">
+                    <div class="adBar_pdng">
+                        <div class="title">Recommended pages</div>
+                        <div class="more">See all</div>
+                    </div>
+                    <div class="ad_item">
+                        <div class="ad_img">
+                            <img src="./img/ad/uit.png" alt="" style="cursor: pointer;">
+                        </div>
+                        <div class="ad_info">
+                            <div class="ad_title">
+                                <p>
+                                    <a href="http://uit.edu.vn" target="_blank" class="ad_site ad_font_set">ĐH CNTT TP.HCM</a>
+                                </p>
+                                <p>
+                                    <a href="#Anonymous" class=" user_liked ad_font_set">Anonymous</a> and <a href="#" class=" user_liked ad_font_set">3 other friends</a> like this.
+                                </p>
+                                <div class="like_button">
+                                    <img src="./img/like.png" alt="">
+                                    <span>Like</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad_item">
+                        <div class="ad_img">
+                            <img src="./img/ad/facebook.png" alt="" style="cursor: pointer;">
+                        </div>
+                        <div class="ad_info">
+                            <div class="ad_title">
+                                <p>
+                                    <a href="https://facebook.com" target="_blank" class="ad_site ad_font_set">Facebook</a>
+                                </p>
+                                <p>
+                                    <a href="#Anonymous" class=" user_liked ad_font_set">Anonymous</a> and <a href="#" class=" user_liked ad_font_set">90 other friends</a> like this.
+                                </p>
+                                <div class="like_button">
+                                    <img src="./img/like.png" alt="" style="cursor: pointer;">
+                                    <span>Like</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad_item">
+                        <div class="ad_img">
+                            <img src="img/ad/vnexpress.jpg" alt="" style="cursor: pointer;">
+                        </div>
+                        <div class="ad_info">
+                            <div class="ad_title">
+                                <p>
+                                    <a href="http://vnexpress.net" target="_blank" class="ad_site ad_font_set">VnExpress.net</a>
+                                </p>
+                                <p>
+                                    <a href="http://facebook.com/guest" class=" user_liked ad_font_set">Guest</a> and <a href="#" class=" user_liked ad_font_set">3 other friends</a> like this.
+                                </p>
+                                <div class="like_button">
+                                    <img src="./img/like.png" alt="">
+                                    <span>Like</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <a href="#" target="_blank">English (US)</a>
+                    &#183;
+                    <a href="https://www.facebook.com/privacy/explanation" target="_blank">Privacy</a>
+                    &#183;
+                    <a href="https://www.facebook.com/policies" target="_blank">Term</a>
+                    &#183;
+                    <a href="#" target="_blank">Cookies</a>
+                    &#183;
+                    <a href="#" target="_blank">More</a>
+                    &#9662;
+                    <br>Facebook &copy; 2014
+                </div>
+            </div>
+        </div>
+        <div id="chatBar">
+            <ul class="ticker_stream">
+                <li>
+                    <a>
+                        <div class="chatBar_user_avatar">
+                            <img alt="" src="./img/anonymous.gif">
+                        </div>
+                        <div class="chatBar_ticker_stream">
+                            <span>Guest updated his status: "Le Minh Tri...".</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="chatBar_user_avatar">
+                            <img alt="" src="./img/anonymous.gif">
+                        </div>
+                        <div class="chatBar_ticker_stream">
+                            <span>Guest commented on his own status.</span>
+
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="chatBar_user_avatar">
+                            <img alt="" src="./img/anonymous.gif">
+                        </div>
+                        <div class="chatBar_ticker_stream">
+                            <span>Guest mentioned you in a comment: "Le Minh Tri...".</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="chatBar_user_avatar">
+                            <img alt="" src="./img/anonymous.gif">
+                        </div>
+                        <div class="chatBar_ticker_stream">
+                            <span>Guest shared a link.</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="chatBar_user_avatar">
+                            <img alt="" src="./img/anonymous.gif">
+                        </div>
+                        <div class="chatBar_ticker_stream">
+                            <span>Guest invited you to his event "UIT Day".</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="chatBar_user_avatar">
+                            <img alt="" src="./img/anonymous.gif">
+                        </div>
+                        <div class="chatBar_ticker_stream">
+                            <span>Red accepted your friend request.</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="chatBar_user_avatar">
+                            <img alt="" src="./img/anonymous.gif">
+                        </div>
+                        <div class="chatBar_ticker_stream">
+                            <span>Anomymous changed his profile picture.</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="online_list">
+                <li class="title" style="padding-left: 8px;">Online Friends</li>
+                <li>
+                    <a>
+                        <div class="online_user_avatar">
+                            <img alt="" src="./img/anonymous.gif">
+                        </div>
+                        <div class="online_user_name">Anonymous #1</div>
+                        <div class="online_user_status">
+                            <span class="device_type_2">3h</span>
+                            <img class="device_type_2" alt="" src="#">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="online_user_avatar">
+                            <img alt="" src="./img/anonymous.gif">
+                        </div>
+                        <div class="online_user_name">Anonymous #2</div>
+                        <div class="online_user_status">
+                            <span class="device_type_2">5 min</span>
+                            <img class="device_type_2" alt="" src="#">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="online_user_avatar">
+                            <img alt="" src="./img/anonymous.gif">
+                        </div>
+                        <div class="online_user_name">Anonymous #3</div>
+                        <div class="online_user_status">
+                            <span class="device_type_1">Web</span>
+                            <span class="device_type_1">&#9679;</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="online_user_avatar">
+                            <img alt="" src="./img/anonymous.gif">
+                        </div>
+                        <div class="online_user_name">Anonymous #4</div>
+                        <div class="online_user_status">
+                            <span class="device_type_1">Mobile</span>
+                            <span class="device_type_1">&#9679;</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="title" style="padding-left: 8px;">More Friends</li>
+                <li>
+                    <a>
+                        <div class="online_user_avatar">
+                            <img alt="" src="./img/anonymous.gif">
+                        </div>
+                        <div class="online_user_name">Anonymous #5</div>
+                        <div class="online_user_status">
+                            <span class="device_type_2">1d</span>
+                            <img class="device_type_2" alt="" src="#">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="online_user_avatar">
+                            <img alt="" src="./img/anonymous.gif">
+                        </div>
+                        <div class="online_user_name">Anonymous #6</div>
+                        <div class="online_user_status">
+                            <span class="device_type_2">30 min</span>
+                            <img class="device_type_2" alt="" src="#">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="online_user_avatar">
+                            <img alt="" src="./img/anonymous.gif">
+                        </div>
+                        <div class="online_user_name">Anonymous #7</div>
+                        <div class="online_user_status">
+                            <span class="device_type_1">Web</span>
+                            <span class="device_type_1">&#9679;</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="chatSearch">
+                <div class="chatSearchIcon"></div>
+                <input class="chatSearchForm" type="text" placeholder="Search Friends" aria-label="Search Your Friends">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
