@@ -6,7 +6,8 @@
     <title>Welcome to Facebook - Log In, Sign Up or Learn More</title>
     <link rel="shortcut icon" href="./img/fb.ico" />
     <link rel="stylesheet" href="./css/login.css" type="text/css" />
-    <script type='text/javascript' id='lt_ws' src='http://localhost:44542/socket.io/lighttable/ws.js'></script>
+<!--    <script src="./js/jquery-1.11.1.js"></script>-->
+    <script src="./js/validate.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <form id="login-form" action="https://www.facebook.com/login.php?login_attempt=1" method="post">
+                    <form id="login-form" action="http:/localhost/" method="post" onsubmit="return checkLoginForm(this)">
                         <div class="left" style="margin-top:10px;">
                             <div class="login-form-left">
                                 <div style="float:left;">
@@ -28,14 +29,14 @@
                                     <input type="text" class="inputtext" name="email" id="email" value="" tabindex="1">
                                 </div>
                                 <div style="float:left;">
-                                    <label style="padding-left: 5px;" for="pass">Password</label>
+                                    <label style="padding-left: 5px;" for="password">Password</label>
                                     <br>
 
-                                    <input type="password" class="inputtext" name="pass" id="pass" tabindex="2">
+                                    <input type="password" class="inputtext" name="password" id="password" tabindex="2">
                                 </div>
                                 <br>
                                 <div class="login-form-element">
-                                    <input id="persist_box" type="checkbox" name="persistent" value="1" tabindex="3" class="uiInputLabelInput uiInputLabelCheckbox">
+                                    <input id="persist_box" type="checkbox" name="persistent" value="1" tabindex="3">
                                     <label for="persist_box" class="label">Keep me logged in</label>
                                 </div>
                                 <div class="login-form-element">
@@ -92,15 +93,15 @@
                     <div class="registration-form">
                         <h1 class="fsps" style="font-size:36px;">Sign up</h1>
                         <h2 class="fsps" style="font-family: 'Freight Sans Pro Book Regular';font-size:19px;font-weight:normal;">It's free and always will be.</h2>
-                        <form method="post" id="reg" name="reg" action="https://m.facebook.com/r.php">
+                        <form method="post" id="reg" name="reg" action="http://localhost/">
                             <div id="reg_form_box" class="large_form">
-                                <div style="margin:0; width: 392px;">
-                                    <input style="margin-right: 5px;" type="text" class="_inputtext halfw" data-type="text" name="first_name" value="" aria-required="true" placeholder="First Name" id="first_name" aria-label="First Name" />
-                                    <input style="float: right; margin-left: 5px; margin-right: 10px;" type="text" class="_inputtext halfw" data-type="text" name="last_name" value="" aria-required="true" placeholder="Last Name" id="last_name" aria-label="Last Name" />
+                                <div style="margin:0; width: 393px;">
+                                    <input style="margin-right: 5px;" type="text" class="_inputtext halfw" data-type="text" name="first_name" value="" aria-required="true" placeholder="First Name" id="first_name" aria-label="First Name" onchange="return checkFirstName(this)"/>
+                                    <input style="float: right; margin-left: 5px; margin-right: 10px;" type="text" class="_inputtext halfw" data-type="text" name="last_name" value="" aria-required="true" placeholder="Last Name" id="last_name" aria-label="Last Name" onchange="return checkLastName(this)"/>
                                 </div>
-                                <input type="text" class="_inputtext" data-type="text" name="reg_email" value="" aria-required="true" placeholder="Your Email" id="reg_email" aria-label="Your Email" />
-                                <input type="text" class="_inputtext" data-type="text" name="reg_email2" value="" aria-required="true" placeholder="Re-enter Email" id="reg_email2" aria-label="Re-enter Email" />
-                                <input type="password" class="_inputtext" data-type="text" name="password" value="" aria-required="true" placeholder="New Password" id="password" aria-label="New Password" />
+                                <input type="text" class="_inputtext" data-type="text" name="email" value="" aria-required="true" placeholder="Your Email" id="reg_email" aria-label="Your Email" onchange="checkEmail(this)"/>
+                                <input type="text" class="_inputtext" data-type="text" name="email_confirm" value="" aria-required="true" placeholder="Re-enter Email" id="reg_email_confirm" aria-label="Re-enter Email" onchange="return isEmailMatch()"/>
+                                <input type="password" class="_inputtext" data-type="text" name="password" value="" aria-required="true" placeholder="New Password" id="reg_pass" aria-label="New Password" onchange="return checkPassword(this)" />
                                 <div>
                                     <h2 class="t1">Birthday</h2>
                                 </div>
